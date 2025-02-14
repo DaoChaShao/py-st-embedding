@@ -16,7 +16,7 @@
 
 ### Docs
 
-- update CHANGELOG.md. ([22ec897](https://github.com///commit/22ec8972643af5e9f37ee1324cc592114bee172f))
+- update CHANGELOG.md. ([8c80b47](https://github.com///commit/8c80b47382eae127d205a67323390bf314533f8f))
 - create the file of changing log. ([0cf83a7](https://github.com///commit/0cf83a75794b621717f00347442021e9c3498869))
 
 ### Dependencies
