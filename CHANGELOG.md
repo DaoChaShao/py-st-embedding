@@ -11,5 +11,9 @@
 
 ### Docs
 
-- create the file of changing log. ([7188bfa](https://github.com///commit/7188bfaca345da5662e95e39d4d3254b76a61b8f))
+- create the file of changing log. ([0cf83a7](https://github.com///commit/0cf83a75794b621717f00347442021e9c3498869))
+
+### Dependencies
+
+- create the file of dependencies. ([018e9a6](https://github.com///commit/018e9a666e4adc95bc56f007f5f3edcef6e7127a))
 
