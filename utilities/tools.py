@@ -1,6 +1,6 @@
 from altair import Chart
 from pandas import DataFrame
-from plotly import graph_objects
+from plotly import graph_objects, express
 from streamlit import write
 
 
@@ -64,3 +64,30 @@ def points_3_chart(points: dict[str, list[int]]):
     )
 
     return fig
+
+
+def plotly_express_2d(points: dict[str, list[int]]):
+    """ Display the 2 dimentions chart of scatter """
+    values_x: list = [point[0] for point in points.values()]
+    values_y: list = [point[1] for point in points.values()]
+
+    fig = express.scatter(x=values_x, y=values_y)
+
+    return fig
+
+
+def plotly_express_3d(features: DataFrame):
+    """ Display the 3 dimentions chart of scatter """
+
+    label_x: str = features.keys()[0]
+    label_y: str = features.keys()[1]
+    label_z: str = features.keys()[2]
+
+    fig = express.scatter_3d(
+        data_frame=features,
+        x=label_x,
+        y=label_y,
+        z=label_z,
+        color="origin",
+        title=f"Feature differences among {label_x}, {label_y} and {label_z}",
+    )
