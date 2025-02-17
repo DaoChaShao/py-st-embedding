@@ -99,8 +99,9 @@ class PCALearnerDimensionsReducer(object):
 class UMAPNonlinearDimensionsReducer(object):
     """ Reduce the dimensions of the features using UMAP """
 
-    def __init__(self, dimensions: int = 3):
+    def __init__(self, dimensions: int = 3, neighbours: int = 15):
         self._dims = dimensions
+        self._neighs = neighbours
 
     def decrease(self, features: DataFrame, seed=None) -> DataFrame:
         """ Fit and transform the features using UMAP """
@@ -110,7 +111,7 @@ class UMAPNonlinearDimensionsReducer(object):
         vectors = features.drop(columns=[categories_name]).values
 
         # Reduce from ND to 3D using UMAP
-        reducer = UMAP(n_components=self._dims, random_state=seed)
+        reducer = UMAP(n_components=self._dims, n_neighbors=self._neighs, random_state=seed)
         vectors_3d = reducer.fit_transform(vectors)
 
         # Convert to DataFrame with correct column names
