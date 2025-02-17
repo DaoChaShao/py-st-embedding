@@ -21,7 +21,7 @@ def main():
     chart_3d_pca = scatter_3d_nor(features_3d_pca)
     plotly_chart(chart_3d_pca, use_container_width=True)
 
-    features_3d_umap = UMAPNonlinearDimensionsReducer(dimensions=3).decrease(features)
+    features_3d_umap = UMAPNonlinearDimensionsReducer(dimensions=3, neighbours=5).decrease(features)
     chart_3d_umap = scatter_3d_nor(features_3d_umap)
     plotly_chart(chart_3d_umap, use_container_width=True)
 
