@@ -28,8 +28,8 @@
 
 ### Docs
 
+- update CHANGELOG.md. ([484b2dd](https://github.com///commit/484b2dd47b2e0cd63589754e59213cd16ba90703))
 - update CHANGELOG.md ([6c4e31b](https://github.com///commit/6c4e31b0f3e4e8bd8fc01aea79b929cd76e0d4d7))
-- update CHANGELOG.md. ([0d80b74](https://github.com///commit/0d80b74d7020a4392185e3a5cbbd7574f5975ec1))
 - create the README.md. ([0bcfb27](https://github.com///commit/0bcfb27c9cd8b6beb5f8b6e651c6c5cd7dad7ebd))
 - create the file of changing log. ([0cf83a7](https://github.com///commit/0cf83a75794b621717f00347442021e9c3498869))
 
