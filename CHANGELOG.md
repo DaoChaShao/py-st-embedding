@@ -5,6 +5,9 @@
 
 ### Features
 
+- add the model tools. ([5570962](https://github.com///commit/55709626a1ab10d577ac5beaec31a282a1fd339f))
+- add the embedding model test page. ([08e5134](https://github.com///commit/08e51341e49eaa9a889f63d0e683fa43128eaf6e))
+- add the new page for demonstrating vectors visualization via UMAP. ([5e52302](https://github.com///commit/5e52302dd5601bfcd024122fb57b5c1fd50c681f))
 - add the subpage and navigation bar. ([b6d855d](https://github.com///commit/b6d855d23ba16d8aa29f39a5fe325798ae0031c1))
 - restruct the page architecture. ([b78d8e7](https://github.com///commit/b78d8e73d3cd90417b38999d9cbc1dad94cbc681))
 - update the new functions. ([efc6de3](https://github.com///commit/efc6de3f7a75e72704548fdd3f6626984a06ca13))
@@ -18,19 +21,21 @@
 
 ### Chore
 
+- register the embedding page on the application. ([5dabe90](https://github.com///commit/5dabe905d9429c9e68a1f30690472ac2cb945059))
 - use the new functions. ([229e324](https://github.com///commit/229e32486ad2946fe067f85cba2c596e571e8499))
 - use the new tools. ([147cec7](https://github.com///commit/147cec7f7b1f85ec540fdb9cb6da241e6123b6cd))
 - add the 2d chart, but 3d is filed. ([1912762](https://github.com///commit/1912762a8e0d674c6f83d2ece3caadb620dc3cad))
 
 ### Docs
 
-- update CHANGELOG.md ([fb57dfe](https://github.com///commit/fb57dfebb5073864817328d8f700130d754ab4b7))
+- update CHANGELOG.md ([6c4e31b](https://github.com///commit/6c4e31b0f3e4e8bd8fc01aea79b929cd76e0d4d7))
 - update CHANGELOG.md. ([0d80b74](https://github.com///commit/0d80b74d7020a4392185e3a5cbbd7574f5975ec1))
 - create the README.md. ([0bcfb27](https://github.com///commit/0bcfb27c9cd8b6beb5f8b6e651c6c5cd7dad7ebd))
 - create the file of changing log. ([0cf83a7](https://github.com///commit/0cf83a75794b621717f00347442021e9c3498869))
 
 ### Performance Improvements
 
+- enhance the function of generating random data. ([2b5770c](https://github.com///commit/2b5770c08e98810d686cdc90f04aeb4d3000e619))
 - restruct the main function to optimize the performance. ([ae4fbea](https://github.com///commit/ae4fbea4be2baaf1a297434f6fda689913dcc671))
 - add the normal function. ([6323dd9](https://github.com///commit/6323dd9fde109ed3766e72d2f44ea86be61dc78b))
 - enhance the generating ability of the datasets. ([aaa091f](https://github.com///commit/aaa091f0a9ef0b8aa202037118394c1a378d1dc4))
