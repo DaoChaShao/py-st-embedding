@@ -43,7 +43,7 @@ def scatter_3d(features: DataFrame):
         color=categories,
         text=categories,
         title=f"Feature Differences among {cols[1].upper()}, {cols[2].upper()} and {cols[3].upper()}",
-        height=600,
+        height=800,
     )
 
     return fig
@@ -94,6 +94,28 @@ class PCALearnerDimensionsReducer(object):
         df["category"] = categories
 
         return df
+
+
+def dimensions_reducer_umap(
+        features: DataFrame, dimensions: int = 3,
+        feature_x: str = "X", feature_y: str = "Y", feature_z: str = "Z"
+) -> DataFrame:
+    """ Display the 3 dimensions chart of scatter """
+    # Extract words (keys) and their vectors (values)S
+    categories = features.iloc[:, 0].tolist()
+    categories_name: str = features.columns[0]
+    vectors = features.drop(columns=[categories_name]).values
+
+    # Reduce from ND to 3D using UMAP
+    reducer = UMAP(n_components=dimensions)
+    vectors_3d = reducer.fit_transform(vectors)
+
+    # Convert to DataFrame with correct column names
+    df = DataFrame(vectors_3d, columns=[feature_x, feature_y, feature_z])
+    # Add word labels
+    df["category"] = categories
+
+    return df
 
 
 class UMAPNonlinearDimensionsReducer(object):
