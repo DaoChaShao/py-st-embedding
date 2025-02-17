@@ -46,15 +46,15 @@ def feature_data_3d() -> DataFrame:
     return df
 
 
-def feature_data() -> DataFrame:
+def feature_data(feature_amount: int) -> DataFrame:
     """ Generate a 3D dataset """
     words = ["Apple", "Banana", "Car", "Dog", "Elephant", "Flower", "Guitar", "House", "Island", "Jungle"]
 
     vectors: dict[str, list[float]] = {
-        word: round(random.rand(10), 3).tolist() for word in words
+        word: round(random.rand(feature_amount), 5).tolist() for word in words
     }
 
-    cols: list[str] = [f"feature_{i}" for i in range(10)]
+    cols: list[str] = [f"feature_{i + 1}" for i in range(feature_amount)]
     # Reverse the order of the columns to match the order of the features
     df = DataFrame(vectors).T
 
