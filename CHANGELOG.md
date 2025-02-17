@@ -24,6 +24,7 @@
 
 ### Docs
 
+- update CHANGELOG.md ([fb57dfe](https://github.com///commit/fb57dfebb5073864817328d8f700130d754ab4b7))
 - update CHANGELOG.md. ([0d80b74](https://github.com///commit/0d80b74d7020a4392185e3a5cbbd7574f5975ec1))
 - create the README.md. ([0bcfb27](https://github.com///commit/0bcfb27c9cd8b6beb5f8b6e651c6c5cd7dad7ebd))
 - create the file of changing log. ([0cf83a7](https://github.com///commit/0cf83a75794b621717f00347442021e9c3498869))
