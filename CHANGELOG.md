@@ -5,6 +5,8 @@
 
 ### Features
 
+- add the subpage and navigation bar. ([b6d855d](https://github.com///commit/b6d855d23ba16d8aa29f39a5fe325798ae0031c1))
+- restruct the page architecture. ([b78d8e7](https://github.com///commit/b78d8e73d3cd90417b38999d9cbc1dad94cbc681))
 - update the new functions. ([efc6de3](https://github.com///commit/efc6de3f7a75e72704548fdd3f6626984a06ca13))
 - rebuild the previous datasets, and add the new ones. ([5b78884](https://github.com///commit/5b78884c85fbbeb5dc6c3d20c92291b327281393))
 - initialize database. ([8503729](https://github.com///commit/850372949e007b57f0a79f6877aa500d05f6bf41))
@@ -22,12 +24,15 @@
 
 ### Docs
 
-- update CHANGELOG.md. ([f76319e](https://github.com///commit/f76319e55bc34c044f18cf72d4999840be35fff7))
+- update CHANGELOG.md. ([0d80b74](https://github.com///commit/0d80b74d7020a4392185e3a5cbbd7574f5975ec1))
 - create the README.md. ([0bcfb27](https://github.com///commit/0bcfb27c9cd8b6beb5f8b6e651c6c5cd7dad7ebd))
 - create the file of changing log. ([0cf83a7](https://github.com///commit/0cf83a75794b621717f00347442021e9c3498869))
 
 ### Performance Improvements
 
+- restruct the main function to optimize the performance. ([ae4fbea](https://github.com///commit/ae4fbea4be2baaf1a297434f6fda689913dcc671))
+- add the normal function. ([6323dd9](https://github.com///commit/6323dd9fde109ed3766e72d2f44ea86be61dc78b))
+- enhance the generating ability of the datasets. ([aaa091f](https://github.com///commit/aaa091f0a9ef0b8aa202037118394c1a378d1dc4))
 - update the functions capability to handle more complex scenarios. ([4db6ffe](https://github.com///commit/4db6ffe894f932cb02820a3314fc34fd27c6b49f))
 - restruct the coding architecture of the project. ([f132711](https://github.com///commit/f13271115f76e7fa259b1d9d7caecab6d3e58450))
 - add the new functions and improve the previous functions. ([0cef91f](https://github.com///commit/0cef91fc9875d44b982edb7b637e82776de0d871))
