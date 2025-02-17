@@ -1,9 +1,12 @@
 from pandas import DataFrame
 from streamlit import plotly_chart, data_editor
 from utilities.datasets import feature_data
+from utilities.params import params_umap
 from utilities.tools import UMAPNonlinearDimensionsReducer, scatter_3d_nor
 
-features: DataFrame = feature_data(8)
+# Generate some sample data
+amount: int = params_umap()["amount"]
+features: DataFrame = feature_data(amount)
 
 data_editor(features, disabled=True, hide_index=True, use_container_width=True)
 
