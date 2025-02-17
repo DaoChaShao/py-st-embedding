@@ -18,8 +18,8 @@
 
 ### Docs
 
+- update CHANGELOG.md. ([bfe7d0c](https://github.com/DaoChaShao/embedding/commit/bfe7d0cc55e814ebb8ea20da147e12f0cd3ba4eb))
 - create the README.md. ([0bcfb27](https://github.com/DaoChaShao/embedding/commit/0bcfb27c9cd8b6beb5f8b6e651c6c5cd7dad7ebd))
-- update CHANGELOG.md. ([3207f65](https://github.com/DaoChaShao/embedding/commit/3207f6587f0becd9649b830975130b9c0451e161))
 - create the file of changing log. ([0cf83a7](https://github.com/DaoChaShao/embedding/commit/0cf83a75794b621717f00347442021e9c3498869))
 
 ### Performance Improvements
