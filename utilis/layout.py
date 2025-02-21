@@ -38,7 +38,7 @@ def subpages_setter() -> None:
             Page(page=pages["page"][1], title=pages["title"][1], icon=pages["icon"][1]),
             Page(page=pages["page"][2], title=pages["title"][2], icon=pages["icon"][2]),
         ],
-        "Reality": [
+        "Simulation": [
             Page(page=pages["page"][3], title=pages["title"][3], icon=pages["icon"][3]),
             Page(page=pages["page"][4], title=pages["title"][4], icon=pages["icon"][4]),
         ],
