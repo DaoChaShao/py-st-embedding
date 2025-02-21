@@ -146,7 +146,7 @@ class UMAPNonlinearDimensionsReducer(object):
         return df
 
 
-def scatter_3d_nor(features: DataFrame):
+def scatter_3d_nor(features: DataFrame, point_size: int, font_size: int):
     """ Display the 3 dimensions chart of scatter """
     # Define the columns to be used for plotting
     cols: list = features.columns.tolist()
@@ -163,5 +163,8 @@ def scatter_3d_nor(features: DataFrame):
         title=f"Feature Differences among {cols[0].upper()}, {cols[1].upper()} and {cols[2].upper()}",
         height=800,
     )
+
+    # Specific adjustments
+    fig.update_traces(marker=dict(size=point_size), textfont=dict(size=font_size))
 
     return fig
