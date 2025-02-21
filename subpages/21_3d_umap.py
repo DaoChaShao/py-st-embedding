@@ -1,8 +1,8 @@
 from pandas import DataFrame
 from streamlit import plotly_chart, data_editor
-from utilities.datasets import feature_data
-from utilities.params import params_umap
-from utilities.tools import UMAPNonlinearDimensionsReducer, scatter_3d_nor
+from utilis.datasets import feature_data
+from utilis.params import params_umap
+from utilis.tools import UMAPNonlinearDimensionsReducer, scatter_3d_nor
 
 # Generate some sample data
 amount: int = params_umap()["amount"]

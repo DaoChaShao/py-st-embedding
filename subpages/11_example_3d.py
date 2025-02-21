@@ -1,7 +1,7 @@
 from pandas import DataFrame
 from streamlit import plotly_chart, data_editor
-from utilities.datasets import feature_data_3d
-from utilities.tools import scatter_3d
+from utilis.datasets import feature_data_3d
+from utilis.tools import scatter_3d
 
 features_3d: DataFrame = feature_data_3d()
 

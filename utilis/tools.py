@@ -3,10 +3,8 @@ from plotly import express
 from sklearn.decomposition import PCA
 from umap import UMAP
 
-print(UMAP)
 
-
-def scatter_2d(features: DataFrame):
+def scatter_2d(features: DataFrame, point_size: int, font_size: int):
     """ Display the 2 dimensions chart of scatter """
     # Define the columns to be used for plotting
     cols: list = features.columns.tolist()
@@ -22,13 +20,14 @@ def scatter_2d(features: DataFrame):
         height=600,
     )
 
-    # Adjust text position
+    # Specific adjustments
     fig.update_traces(textposition="top center")
+    fig.update_traces(marker=dict(size=point_size), textfont=dict(size=font_size))
 
     return fig
 
 
-def scatter_3d(features: DataFrame):
+def scatter_3d(features: DataFrame, point_size: int, font_size: int):
     """ Display the 3 dimensions chart of scatter """
     # Define the columns to be used for plotting
     cols: list = features.columns.tolist()
@@ -45,6 +44,9 @@ def scatter_3d(features: DataFrame):
         title=f"Feature Differences among {cols[1].upper()}, {cols[2].upper()} and {cols[3].upper()}",
         height=800,
     )
+
+    # Specific adjustments
+    fig.update_traces(marker=dict(size=point_size), textfont=dict(size=font_size))
 
     return fig
 

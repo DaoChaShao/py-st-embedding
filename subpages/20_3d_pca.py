@@ -1,7 +1,7 @@
 from pandas import DataFrame
 from streamlit import plotly_chart, data_editor
-from utilities.datasets import feature_data
-from utilities.tools import PCALearnerDimensionsReducer, scatter_3d_nor
+from utilis.datasets import feature_data
+from utilis.tools import PCALearnerDimensionsReducer, scatter_3d_nor
 
 features: DataFrame = feature_data(8)
 
