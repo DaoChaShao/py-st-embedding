@@ -18,7 +18,7 @@ def subpages_setter() -> None:
             "Example in 3D",
             "3D Visualization with PCA",
             "3D Visualization with UMAP",
-            "Embedding Model"
+            "Models"
         ],
         "icon": [
             ":material/home:",
