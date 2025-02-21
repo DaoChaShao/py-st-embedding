@@ -45,6 +45,30 @@ def params_example_3d() -> tuple[int, int]:
         return point_size, font_size
 
 
+def params_pca() -> tuple[int, int, int]:
+    """ Set up the sidebar for the PCA visualization """
+    with sidebar:
+        header("PCA Parameters")
+        feature_dims: int = slider(
+            "The Dimensions of the Features",
+            min_value=4, max_value=12, value=8, step=1,
+            help="The amount of data to visualize",
+        )
+        point_size: int = slider(
+            "Point Size",
+            min_value=5, max_value=20, value=10, step=1, format="%d",
+            help="The size of the points in the scatter plot",
+        )
+        caption(f"The size of the points in the scatter plot is {point_size}")
+        font_size: int = slider(
+            "Font Size",
+            min_value=10, max_value=20, value=12, step=1, format="%d",
+            help="The size of the text in the scatter plot",
+        )
+        caption(f"The size of the text in the scatter plot is {font_size}")
+        return feature_dims, point_size, font_size
+
+
 def params_umap():
     """ Set up the sidebar for the UMAP visualization """
     params: dict = {}
