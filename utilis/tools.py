@@ -173,6 +173,7 @@ def scatter_3d_nor(features: DataFrame, point_size: int, font_size: int):
     return fig
 
 
+
 def scatter_3d_sentences(features: DataFrame, point_size: int, font_size: int):
     """ Display the 3 dimensions chart of scatter """
     # Define the columns to be used for plotting
