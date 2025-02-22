@@ -116,6 +116,7 @@ def dimensions_reducer_umap(
 
     # Convert to DataFrame with correct column names
     df = DataFrame(vectors_3d, columns=[feature_x, feature_y, feature_z])
+
     # Add word labels
     df["category"] = categories
 
@@ -172,21 +173,21 @@ def scatter_3d_nor(features: DataFrame, point_size: int, font_size: int):
     return fig
 
 
-def scatter_3d_sent(features: DataFrame, point_size: int, font_size: int):
+def scatter_3d_sentences(features: DataFrame, point_size: int, font_size: int):
     """ Display the 3 dimensions chart of scatter """
     # Define the columns to be used for plotting
     cols: list = features.columns.tolist()
-    categories: list = features["category"].tolist()  # This should be the sentences
+    categories: list = features["category"].tolist()
 
     # Define the plotting function
     fig = express.scatter_3d(
         data_frame=features,
-        x=cols[1],
-        y=cols[2],
-        z=cols[3],
+        x=cols[0],
+        y=cols[1],
+        z=cols[2],
         color=categories,  # You can color by the sentence category
         text=categories,  # Display the sentences as hover text
-        title=f"Feature Differences among {cols[1].upper()}, {cols[2].upper()} and {cols[3].upper()}",
+        title=f"Feature Differences among {cols[0].upper()}, {cols[1].upper()} and {cols[2].upper()}",
         height=800,
         width=1000  # Set a wider width for better visualization
     )
