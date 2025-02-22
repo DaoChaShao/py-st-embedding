@@ -1,3 +1,4 @@
+from numpy import ndarray
 from pandas import DataFrame
 from plotly import express
 from sklearn.decomposition import PCA
@@ -100,16 +101,17 @@ class PCALearnerDimensionsReducer(object):
 
 def dimensions_reducer_umap(
         features: DataFrame, dimensions: int = 3,
+        neighbors: int = 15, seed: int = 9527,
         feature_x: str = "X", feature_y: str = "Y", feature_z: str = "Z"
 ) -> DataFrame:
     """ Display the 3 dimensions chart of scatter """
     # Extract words (keys) and their vectors (values)S
-    categories = features.iloc[:, 0].tolist()
+    categories = features.index.tolist()
     categories_name: str = features.columns[0]
     vectors = features.drop(columns=[categories_name]).values
 
     # Reduce from ND to 3D using UMAP
-    reducer = UMAP(n_components=dimensions)
+    reducer = UMAP(n_components=dimensions, n_neighbors=neighbors, random_state=seed)
     vectors_3d = reducer.fit_transform(vectors)
 
     # Convert to DataFrame with correct column names
@@ -166,5 +168,41 @@ def scatter_3d_nor(features: DataFrame, point_size: int, font_size: int):
 
     # Specific adjustments
     fig.update_traces(marker=dict(size=point_size), textfont=dict(size=font_size))
+
+    return fig
+
+
+def scatter_3d_sent(features: DataFrame, point_size: int, font_size: int):
+    """ Display the 3 dimensions chart of scatter """
+    # Define the columns to be used for plotting
+    cols: list = features.columns.tolist()
+    categories: list = features["category"].tolist()  # This should be the sentences
+
+    # Define the plotting function
+    fig = express.scatter_3d(
+        data_frame=features,
+        x=cols[1],
+        y=cols[2],
+        z=cols[3],
+        color=categories,  # You can color by the sentence category
+        text=categories,  # Display the sentences as hover text
+        title=f"Feature Differences among {cols[1].upper()}, {cols[2].upper()} and {cols[3].upper()}",
+        height=800,
+        width=1000  # Set a wider width for better visualization
+    )
+
+    # Specific adjustments
+    fig.update_traces(marker=dict(size=point_size), textfont=dict(size=font_size))
+
+    # Adjust layout settings for better positioning
+    fig.update_layout(
+        legend=dict(
+            orientation="h",  # Set the legend to be horizontal
+            yanchor="bottom",  # Position legend at the bottom
+            xanchor="center",  # Center the legend
+            y=-0.15,  # Adjust vertical positioning of legend (move further down)
+            x=0.5  # Center the legend horizontally
+        )
+    )
 
     return fig
