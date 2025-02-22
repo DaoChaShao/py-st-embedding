@@ -57,6 +57,7 @@
 
 ### Docs
 
+- update CHANGELOG.md to include new 2D embedding functionality ([09f2e68](https://github.com///commit/09f2e680232807901f926ac443b196107400849c))
 - update CHANGELOG.md to include recent bug fixes and performance improvements ([4379c80](https://github.com///commit/4379c8019e00d002640fd533d45c0758de16ce85))
 - update CHANGELOG.md for version 0.1.0 with new features, bug fixes, and improvements ([adbff0c](https://github.com///commit/adbff0cee7e705847e489d85cbbc9b624d331691))
 - update docstring for model_cn_embedding_sentences to clarify purpose and usage ([bb77339](https://github.com///commit/bb77339452e9990279037d8668f5931d78f1a3c7))
