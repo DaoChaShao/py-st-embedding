@@ -55,6 +55,7 @@
 
 ### Docs
 
+- update CHANGELOG.md for version 0.1.0 with new features, bug fixes, and improvements ([0f0d7a3](https://github.com///commit/0f0d7a34af9de8bb0442a89ae094d9869e4643dd))
 - update docstring for model_cn_embedding_sentences to clarify purpose and usage ([bb77339](https://github.com///commit/bb77339452e9990279037d8668f5931d78f1a3c7))
 - update README.md to include new dependencies for addict and transformers ([efa6de0](https://github.com///commit/efa6de0a0abee182f7321d35c89b0a7bd81a6c4d))
 - update README with detailed installation instructions and additional dependencies ([0ead368](https://github.com///commit/0ead368c8bf4b0c6c05ffbeb2ebe5cff704df4af))
