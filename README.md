@@ -35,4 +35,4 @@ This application is used to practice how to use the plotly chart demonstrating f
 10. Run the command `pip install transformers` to add the new dependency.
 9. Run the application via the command `streamlit run main.py`.
 10. Or, you can run the command `pip install -r requirements.txt` to install all dependencies.
-11. Or, you can use it online >>> 
+11. Or, you can use it online >>> [![Static Badge](https://img.shields.io/badge/Open%20in%20Streamlit-Daochashao-red?style=for-the-badge&logo=streamlit&labelColor=white)](https://embed-plotly.streamlit.app/)
