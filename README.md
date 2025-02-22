@@ -25,12 +25,14 @@ This application is used to practice how to use the plotly chart demonstrating f
    is not so helpful. You need to add many dependencies to run the application except the dependency of modelscope.
 2. Clone the repository.
 3. Run the command `pip install modelscope`.
-4. Run the command `pip install setuptools` to add the new dependency.
-5. Run the command `pip install datasets` to add the new dependency, which is normally provided
+4. Run the command `pip install addict`.
+5. Run the command `pip install setuptools` to add the new dependency.
+6. Run the command `pip install datasets` to add the new dependency, which is normally provided
    by [Hugging Face](https://huggingface.co/).
-6. Run the command `pip install torch` to add the new dependency.
-7. Run the command `pip install simplejson` to add the new dependency.
-8. Run the command `pip install sortedcontainers` to add the new dependency.
+7. Run the command `pip install torch` to add the new dependency.
+8. Run the command `pip install simplejson` to add the new dependency.
+9. Run the command `pip install sortedcontainers` to add the new dependency.
+10. Run the command `pip install transformers` to add the new dependency.
 9. Run the application via the command `streamlit run main.py`.
 10. Or, you can run the command `pip install -r requirements.txt` to install all dependencies.
 11. Or, you can use it online >>> 
