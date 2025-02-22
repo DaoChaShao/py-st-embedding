@@ -5,6 +5,7 @@
 
 ### Features
 
+- add 2D embedding functionality in new script ([9627b1d](https://github.com///commit/9627b1dbfb64bf88c646c573e4b866a0d391c16d))
 - enhance embedding functionality with 3D scatter plot visualization and improved session state management ([6e4bb27](https://github.com///commit/6e4bb27ea9312665f688c90dc06776762b42e72f))
 - update requirements.txt to include addict and transformers packages ([6f10938](https://github.com///commit/6f10938363ba73e7648ce4cd92d56ca46b5349bd))
 - enhance UMAP dimensionality reduction and add 3D scatter plot visualization for sentence features ([913e1ac](https://github.com///commit/913e1ace0b45aac54c4518f02b50f63c05c76866))
@@ -56,7 +57,7 @@
 
 ### Docs
 
-- update CHANGELOG.md to include recent bug fixes and performance improvements ([482e8c4](https://github.com///commit/482e8c40edf1ca6bcca5e3963fe9cc5e24be888e))
+- update CHANGELOG.md to include recent bug fixes and performance improvements ([4379c80](https://github.com///commit/4379c8019e00d002640fd533d45c0758de16ce85))
 - update CHANGELOG.md for version 0.1.0 with new features, bug fixes, and improvements ([adbff0c](https://github.com///commit/adbff0cee7e705847e489d85cbbc9b624d331691))
 - update docstring for model_cn_embedding_sentences to clarify purpose and usage ([bb77339](https://github.com///commit/bb77339452e9990279037d8668f5931d78f1a3c7))
 - update README.md to include new dependencies for addict and transformers ([efa6de0](https://github.com///commit/efa6de0a0abee182f7321d35c89b0a7bd81a6c4d))
@@ -78,6 +79,13 @@
 - update the functions capability to handle more complex scenarios. ([4db6ffe](https://github.com///commit/4db6ffe894f932cb02820a3314fc34fd27c6b49f))
 - restruct the coding architecture of the project. ([f132711](https://github.com///commit/f13271115f76e7fa259b1d9d7caecab6d3e58450))
 - add the new functions and improve the previous functions. ([0cef91f](https://github.com///commit/0cef91fc9875d44b982edb7b637e82776de0d871))
+
+### Code Refactoring
+
+- add 'refactor' section to changelog configuration ([6bad407](https://github.com///commit/6bad40702dab29724dd1fb9295dc88e89ef86943))
+- remove unnecessary blank line in tools.py ([751b82e](https://github.com///commit/751b82ef7d2600fc2998f8cd1ed874e888322f75))
+- update layout for 2D and 3D embedding pages ([52e074d](https://github.com///commit/52e074d9851f1592ddd362fe69ae03cac22dcb9c))
+- rename 30_embedding.py to 31_embedding_3d.py for clarity ([d3597b4](https://github.com///commit/d3597b41a43b6fb71de063f3c56b076f119562fd))
 
 ### Dependencies
 
