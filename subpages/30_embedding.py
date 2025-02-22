@@ -6,7 +6,7 @@ from streamlit import (empty, markdown, sidebar, button, spinner,
 
 from utilis.models import model_cn_embedding_sentences
 from utilis.params import parmas_embedding
-from utilis.tools import dimensions_reducer_umap, scatter_3d_sent
+from utilis.tools import dimensions_reducer_umap, scatter_3d_sentences
 
 empty_message: empty = empty()
 
@@ -76,7 +76,7 @@ if session_state.result:
         )
         caption(f"The size of the text in the scatter plot is {font_size}")
 
-    chart = scatter_3d_sent(features, point_size, font_size)
+    chart = scatter_3d_sentences(features, point_size, font_size)
     plotly_chart(chart, use_container_width=True)
 else:
     empty_message.info("Please click the 'Embedding' button to get the similarities.")
