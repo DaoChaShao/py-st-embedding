@@ -10,7 +10,8 @@ def subpages_setter() -> None:
             "subpages/11_example_3d.py",
             "subpages/20_3d_pca.py",
             "subpages/21_3d_umap.py",
-            "subpages/30_embedding.py"
+            "subpages/30_embedding_2d.py",
+            "subpages/31_embedding_3d.py"
         ],
         "title": [
             "Home",
@@ -18,7 +19,8 @@ def subpages_setter() -> None:
             "Example in 3D",
             "3D Visualization with PCA",
             "3D Visualization with UMAP",
-            "Models"
+            "Models Embedding in 2D",
+            "Models Embedding in 3D"
         ],
         "icon": [
             ":material/home:",
@@ -26,11 +28,12 @@ def subpages_setter() -> None:
             ":material/3d_rotation:",
             ":material/deployed_code:",
             ":material/view_in_ar:",
-            ":material/model_training:"
+            ":material/model_training:",
+            ":material/modeling:"
         ],
     }
 
-    page_structure: dict = {
+    structure: dict = {
         "Introduction": [
             Page(page=pages["page"][0], title=pages["title"][0], icon=pages["icon"][0]),
         ],
@@ -44,7 +47,8 @@ def subpages_setter() -> None:
         ],
         "Embedding": [
             Page(page=pages["page"][5], title=pages["title"][5], icon=pages["icon"][5]),
+            Page(page=pages["page"][6], title=pages["title"][6], icon=pages["icon"][6])
         ]
     }
-    pg = navigation(page_structure, position="sidebar", expanded=True)
+    pg = navigation(structure, position="sidebar", expanded=True)
     pg.run()
