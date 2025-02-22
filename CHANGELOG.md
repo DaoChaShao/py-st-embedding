@@ -36,6 +36,7 @@
 
 ### Bug Fixes
 
+- rename scatter plot function for consistency and clarity ([63bc89b](https://github.com///commit/63bc89b3c9bd64f356a8368e49b2404e74b10d5a))
 - rename "Embedding Model" to "Models" for clarity in layout ([404bd22](https://github.com///commit/404bd2276961c14cd9e748c66b20a90b32d6fa59))
 - rename "Reality" to "Simulation" for improved accuracy in layout ([e7b44b0](https://github.com///commit/e7b44b0c4de39cce6dd8e234668fcbcd9254a632))
 - rename parameter for feature data generation to improve clarity ([1beea83](https://github.com///commit/1beea83893a77840147741b2d131d3d42b9fe442))
@@ -55,7 +56,7 @@
 
 ### Docs
 
-- update CHANGELOG.md for version 0.1.0 with new features, bug fixes, and improvements ([0f0d7a3](https://github.com///commit/0f0d7a34af9de8bb0442a89ae094d9869e4643dd))
+- update CHANGELOG.md for version 0.1.0 with new features, bug fixes, and improvements ([adbff0c](https://github.com///commit/adbff0cee7e705847e489d85cbbc9b624d331691))
 - update docstring for model_cn_embedding_sentences to clarify purpose and usage ([bb77339](https://github.com///commit/bb77339452e9990279037d8668f5931d78f1a3c7))
 - update README.md to include new dependencies for addict and transformers ([efa6de0](https://github.com///commit/efa6de0a0abee182f7321d35c89b0a7bd81a6c4d))
 - update README with detailed installation instructions and additional dependencies ([0ead368](https://github.com///commit/0ead368c8bf4b0c6c05ffbeb2ebe5cff704df4af))
@@ -68,6 +69,7 @@
 
 ### Performance Improvements
 
+- rename scatter plot function for clarity and adjust column indexing for 3D visualization ([2584cbe](https://github.com///commit/2584cbe13cdc02c963cbce896838834faa8bc57f))
 - enhance the function of generating random data. ([2b5770c](https://github.com///commit/2b5770c08e98810d686cdc90f04aeb4d3000e619))
 - restruct the main function to optimize the performance. ([ae4fbea](https://github.com///commit/ae4fbea4be2baaf1a297434f6fda689913dcc671))
 - add the normal function. ([6323dd9](https://github.com///commit/6323dd9fde109ed3766e72d2f44ea86be61dc78b))
