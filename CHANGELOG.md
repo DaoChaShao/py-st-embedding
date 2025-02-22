@@ -44,6 +44,7 @@
 
 ### Chore
 
+- update CHANGELOG.md for version 0.1.0 with new features, bug fixes, and improvements ([a23c39f](https://github.com/DaoChaShao/py-st-embedding/commit/a23c39fcc0d18e5eea4d8d7d6920e78751ba0eb8))
 - register the embedding page on the application. ([5dabe90](https://github.com/DaoChaShao/py-st-embedding/commit/5dabe905d9429c9e68a1f30690472ac2cb945059))
 - use the new functions. ([229e324](https://github.com/DaoChaShao/py-st-embedding/commit/229e32486ad2946fe067f85cba2c596e571e8499))
 - use the new tools. ([147cec7](https://github.com/DaoChaShao/py-st-embedding/commit/147cec7f7b1f85ec540fdb9cb6da241e6123b6cd))
